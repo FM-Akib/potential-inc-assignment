@@ -69,7 +69,7 @@ const Services = () => {
             <Header title="Services" subTitle="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium" />
             </div>
 
-            <div className="flex justify-around flex-wrap gap-10">
+            <div className="flex justify-around flex-wrap gap-10 md:gap-0">
             {
             Services?.map((service, index) => (
                 <div
