@@ -62,7 +62,7 @@ const Services = () => {
         },
     ]
     return (
-        <section className="px-10 mt-32 pb-32">
+        <section className="px-10 mt-32 pb-32 ">
            
            <div className="mb-10">
 

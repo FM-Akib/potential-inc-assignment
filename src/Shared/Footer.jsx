@@ -1,38 +1,33 @@
+import React from 'react';
+import logo from '../assets/Subtract.svg'
 import { Link } from 'react-router-dom';
-import rightImg from '../../assets/image1.png';
+const Footer = () => {
+  return (
+    <footer className="bg-[#F8F8F8] pt-10 mt-32">
+      <div className="text-center">
+       
+        <div className="flex justify-center items-center space-x-2 mb-4">
+          <div className=" text-white p-3 rounded-full">
+           
+            <img src={logo} alt="" />
+          </div>
+          <h1 className="text-[#1E1E1E] font-montserrat text-[48px] font-bold leading-normal">M<span className='text-[#545454] font-montserrat text-[48px] font-normal leading-normal'>umair</span> </h1>
+        </div>
 
-const Hero = () => {
-    return (
-        <div className="container hero mx-auto  pt-32 px-5 md:px-10  flex flex-col md:flex-row justify-center items-center">
-            {/* Text Section */}
-            <div className="w-full md:w-1/2 flex flex-col">
-                <div>
-                    <h1 className="text-black font-poppins text-xl md:text-2xl font-semibold tracking-[0.72px]">Hi I am</h1>
-                    <h1 className="text-[#FD6F00] font-poppins text-2xl md:text-3xl font-semibold tracking-[0.96px]">Muhammad Umair</h1>
-                </div>
+        {/* Navigation Links */}
+        <nav className="mb-6">
+          <ul className="flex justify-center space-x-6 text-lg text-gray-700">
+            <li><Link to="#" className="hover:text-orange-600">Home</Link></li>
+            <li><Link to="#" className="hover:text-orange-600">About Me</Link></li>
+            <li><Link to="#" className="hover:text-orange-600">Services</Link></li>
+            <li><Link to="#" className="hover:text-orange-600">Projects</Link></li>
+            <li><Link to="#" className="hover:text-orange-600">Testimonials</Link></li>
+            <li><Link to="#" className="hover:text-orange-600">Contact</Link></li>
+          </ul>
+        </nav>
 
-                <div>
-                    <h1 className="text-black font-poppins text-5xl md:text-[100px] font-bold leading-[1.2] tracking-[3px]">UI & UX</h1>
-                    <h1 className="text-black text-end font-poppins text-5xl md:text-[100px] font-bold leading-[1.2] tracking-[3px]">Designer</h1>
-                </div>
-
-                <p className="py-4 md:py-7 text-black font-poppins text-lg md:text-[21px] font-normal tracking-[0.63px] text-justify">
-                    Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra
-                </p>
-                <button className="w-[188px] py-4 px-8 md:px-12 rounded bg-[#FD6F00] text-white text-justify font-poppins text-lg md:text-[21px] font-normal tracking-[0.63px] leading-none">
-                    Hire Me
-                </button>
-            </div>
-
-            {/* Image Section */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
-                <img src={rightImg} alt="hero image" className='relative  w-full max-w-[538px] md:h-[617.24px] ' />
-                <div className="absolute top-[300px] right-[270] w-[374px] h-[83px] flex-shrink-0 bg-[rgba(253,111,0,0.60)]">
-
-                </div>
-
-
-             <div className="flex gap-6 mt-8">
+        {/* Social Media Icons */}
+        <div className="flex gap-6 my-16 justify-center">
              <Link to="/">
              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
               <g clipPath="url(#clip0_1039_175)">
@@ -87,10 +82,15 @@ const Hero = () => {
             </svg>
              </Link> 
 
-             </div>          
-            </div>
-        </div>
-    );
+             </div> 
+
+        {/* Copyright */}
+        <p className="py-6  bg-[#545454] text-white font-poppins text-[21px] font-normal leading-normal tracking-[0.63px]">
+          &copy; 2023 <span className="text-[#FD6F00] font-poppins text-[21px] font-bold leading-normal tracking-[0.63px]">Mumair</span> All Rights Reserved, Inc.
+        </p>
+      </div>
+    </footer>
+  );
 };
 
-export default Hero;
+export default Footer;

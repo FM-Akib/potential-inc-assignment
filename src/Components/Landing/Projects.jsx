@@ -5,6 +5,8 @@ import img3 from '../../assets/Web Designs3.png'
 import img4 from '../../assets/Web Designs4.png'
 import img5 from '../../assets/Web Designs5.png'
 import img6 from '../../assets/Web Designs6.png'
+
+
 const Projects = () => {
     const ProjectsCategory = [
         {title:'All', isActive:false},
@@ -21,8 +23,8 @@ const Projects = () => {
                 ProjectsCategory.map((project, index) => (
                 <div 
                     key={index} 
-                    className={`${project.isActive ? 'bg-[#FD6F00] text-white' : 'bg-[#F8F8F8] text-black'} 
-                    inline-block rounded-[12px] border border-[#545454] 
+                    className={`${project.isActive ? 'bg-[#FD6F00] text-white ' : 'bg-[#F8F8F8] border border-[#7a7a7a] text-black'} 
+                    inline-block rounded-[12px]  
                     py-2 px-3 sm:px-5 
                     text-center font-poppins 
                     text-sm sm:text-lg md:text-[24px] font-normal 
@@ -42,7 +44,7 @@ const Projects = () => {
                 <img
                     src={img2}
                     alt="First Image"
-                    className="absolute bottom-0 left-10 z-10 w-[274px] h-[405px] flex-shrink-0  "
+                    className="absolute -bottom-1 left-10 z-10 w-[274px] h-[405px] flex-shrink-0  "
                     
 
                 />
@@ -64,7 +66,7 @@ const Projects = () => {
                 <img
                     src={img4}
                     alt="First Image"
-                    className="absolute bottom-0 left-10 z-10 w-[274px] h-[405px] flex-shrink-0  "
+                    className="absolute -bottom-1 left-10 z-10 w-[274px] h-[405px] flex-shrink-0  "
                     
 
                 />
@@ -87,7 +89,7 @@ const Projects = () => {
                 <img
                     src={img6}
                     alt="First Image"
-                    className="absolute bottom-0 left-10 z-10 w-[274px] h-[405px] flex-shrink-0  "
+                    className="absolute -bottom-1 left-10 z-10 w-[274px] h-[405px] flex-shrink-0  "
                     
 
                 />
