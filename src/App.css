@@ -1,0 +1,29 @@
+/* Slick Dots Custom Style with Smooth Transition */
+.slick-dots li button:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%; /* Round inactive dots */
+    background-color: #d3d3d3; /* Gray color for inactive dots */
+    opacity: 0.75;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.slick-dots li.slick-active button:before {
+    content: '';
+    width: 40px; /* Wider for active dot */
+    height: 10px; /* Same height */
+    border-radius: 25px; /* Capsule shape */
+    background-color: #FD6F00; /* Orange color */
+    opacity: 1;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.slick-dots {
+    bottom: -25px; /* Adjust position of dots */
+}
+
+.slick-dots li {
+    margin: 0 5px; /* Add space between dots */
+}

@@ -14,7 +14,7 @@ const Projects = () => {
         {title:'Graphic Design', isActive:false},
     ]
     return (
-        <div>
+        <div className="pb-32">
             <Header title="My Projects" subTitle="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium" />
             <div className="px-4 sm:px-10 flex flex-wrap gap-3 sm:gap-5 mx-auto justify-center py-8 sm:py-16">
             {
