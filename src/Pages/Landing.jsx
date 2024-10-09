@@ -1,4 +1,5 @@
 import About from "../Components/Landing/About";
+import Contact from "../Components/Landing/Contact";
 import Hero from "../Components/Landing/Hero";
 import Projects from "../Components/Landing/Projects";
 import Services from "../Components/Landing/Services";
@@ -12,6 +13,7 @@ const Landing = () => {
             <Services/>
             <Projects/>
             <Testimonial/>
+            <Contact/>
         </div>
     );
 };

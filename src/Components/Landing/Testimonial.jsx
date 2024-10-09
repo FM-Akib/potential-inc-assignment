@@ -22,7 +22,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div>
+        <section className="pb-32">
             <Header title="Testimonials" subTitle="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium" />
             
             <div className="slider-container  py-10 mx-auto ">
@@ -31,7 +31,7 @@ const Testimonial = () => {
                     {[...Array(3)].map((_, index) => (
                         <div 
                             key={index} 
-                            className={`flex justify-center w-[1000px] pb-10`} // Center the slides
+                            className={`flex justify-center w-[1000px] pb-20`} // Center the slides
                         >
                             <div 
                                 className={`w-[900px] h-[344px] flex-shrink-0 rounded-[14px] bg-[#F8F8F8] flex items-center gap-7 py-14 px-12 transition-all duration-300 ${activeSlide === index ? 'opacity-100' : 'opacity-50'}`}
@@ -53,7 +53,7 @@ const Testimonial = () => {
                     ))}
                 </Slider>
             </div>
-        </div>
+        </section>
     );
 };
 
